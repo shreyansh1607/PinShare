@@ -1,0 +1,245 @@
+.card {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 15px;
+  background: white;
+}
+
+.card label {
+  width: max-content;
+  color: tomato;
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 1px solid tomato;
+  margin: 3px 0;
+}
+
+.card .place {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 5px 0;
+}
+
+.card .desc {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+  word-wrap: break-word;
+}
+
+.card .stars {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.card .star {
+  color: gold;
+  font-size: 18px;
+}
+
+.card .username {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+}
+
+.card .date {
+  font-size: 12px;
+  color: #999;
+  margin-top: 3px;
+}
+
+/* Popup Styles */
+.leaflet-popup {
+  min-width: 280px;
+}
+
+.leaflet-popup-content-wrapper {
+  padding: 0;
+  overflow: visible;
+}
+
+.leaflet-popup-content {
+  margin: 0;
+  width: 100% !important;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+  background: white;
+  box-shadow: 0 3px 14px rgba(0,0,0,0.2);
+}
+
+.custom-popup .leaflet-popup-content {
+  padding: 0;
+  margin: 0;
+}
+
+/* Form Styles */
+.pin-form {
+  width: 100%;
+  padding: 15px;
+  background: white;
+}
+
+.pin-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  height: auto;
+}
+
+.pin-form label {
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.pin-form input,
+.pin-form textarea,
+.pin-form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+}
+
+.pin-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.pin-form select {
+  height: 36px;
+  cursor: pointer;
+}
+
+.pin-form input:focus,
+.pin-form textarea:focus,
+.pin-form select:focus {
+  outline: none;
+  border-color: #666;
+}
+
+.pin-form .submitButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.pin-form .submitButton:hover {
+  background-color: #45a049;
+}
+
+.pin-form .error {
+  color: #ff3333;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Override the default form styles */
+.leaflet-popup-content form {
+  width: 100%;
+  height: auto;
+  min-height: auto;
+}
+
+.buttons {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+.button {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.logout {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  background-color: tomato;
+}
+
+.login {
+  background-color: teal;
+  margin-right: 10px;
+}
+
+.register {
+  background-color: slateblue;
+}
+
+.leaflet-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center;
+  display: block;
+}
+
+.filter-button {
+  position: fixed;
+  top: 60px;
+  right: 10px;
+  z-index: 999;
+  background-color: white;
+  border: 2px solid #666;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: #666;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #f0f0f0;
+}
+
+.filter-button.active {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}

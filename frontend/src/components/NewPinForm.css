@@ -1,0 +1,59 @@
+.pin-form {
+  width: 250px;
+  padding: 10px;
+}
+
+.pin-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pin-form label {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.pin-form input,
+.pin-form textarea,
+.pin-form select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.pin-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.pin-form input:focus,
+.pin-form textarea:focus,
+.pin-form select:focus {
+  outline: none;
+  border-color: #666;
+}
+
+.pin-form .submitButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.pin-form .submitButton:hover {
+  background-color: #45a049;
+}
+
+.pin-form .error {
+  color: #ff3333;
+  font-size: 12px;
+  margin-top: -5px;
+} 
