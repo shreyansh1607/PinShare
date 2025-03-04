@@ -70,7 +70,7 @@ export default function Register({ setShowRegister }) {
     <div className="registerContainer">
       <div className="logo">
         <Room className="logoIcon" />
-        <span>LamaPin</span>
+        <span>PinShare</span>
       </div>
       <form onSubmit={handleSubmit}>
         <input 
